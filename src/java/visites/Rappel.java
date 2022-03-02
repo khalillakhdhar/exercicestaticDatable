@@ -32,9 +32,11 @@ public class Rappel {
     public List<Rendezvous> getRdvs() {
         return rdvs;
     }
-    public void add(Rendezvous r)
+    public String add(Rendezvous r)
     {
     rdvs.add(r);
+  
+    return "index.xhtml?faces-redirect=true";
     
     }
     
