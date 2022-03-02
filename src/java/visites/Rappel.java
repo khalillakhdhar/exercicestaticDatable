@@ -18,19 +18,24 @@ import javax.faces.bean.RequestScoped;
 @RequestScoped
 public class Rappel {
     // declaration d'un arrayList<Rendezvous>
-   private  List<Rendezvous> rdvs=new ArrayList<Rendezvous>();
+   static  List<Rendezvous> rdvs=new ArrayList<Rendezvous>();
     // List<Type> nom=new ArrayList<Type>();
 
     public Rappel() {
-        Rendezvous rd1=new Rendezvous("teste", "20/03/3033", "10:30", "seance java");
+      /*  Rendezvous rd1=new Rendezvous("teste", "20/03/3033", "10:30", "seance java");
         Rendezvous rd2=new Rendezvous("en ligne", "21/03/3033", "10:30", "seance jsp");
         rdvs.add(rd1);
         rdvs.add(rd2);
-        
+        */
     }
 
     public List<Rendezvous> getRdvs() {
         return rdvs;
+    }
+    public void add(Rendezvous r)
+    {
+    rdvs.add(r);
+    
     }
     
     
